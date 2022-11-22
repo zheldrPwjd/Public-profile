@@ -5,7 +5,7 @@ import pymysql
 
 conn = pymysql.connect(
     user='root', 
-    passwd='m8161516', 
+    passwd='', 
     host='127.0.0.1', 
     db= 'open_source', 
     charset='utf8'
