@@ -8,6 +8,8 @@ class FireInfo(BaseModel):
     serious: bool
     x_longitude: float
     y_latitude: float
+    device_id: int 
+    behave_kind: int 
     phoneNum: str
 
 # 초기 화재 감지 => 문자 보내기.

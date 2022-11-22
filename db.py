@@ -1,8 +1,13 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, scoped_session
+from dotenv import load_dotenv
+load_dotenv()
 
-user_name = "root"
-user_pwd = ""
-db_host = "127.0.0.1"
-db_name = "project01"
+import pymysql
+
+conn = pymysql.connect(
+    user='root', 
+    passwd='db_pw', 
+    host='127.0.0.1', 
+    db= 'open_source', 
+    charset='utf8'
+)
+
